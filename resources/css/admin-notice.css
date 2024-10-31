@@ -1,0 +1,29 @@
+/*
+Admin notice
+*/
+
+.otfw-plugin-required-notice {
+    overflow: hidden;
+    padding: 15px 15px;
+}
+
+.otfw-plugin-required-notice img.otfw-logo {
+    max-height: 48px;
+    float: left;
+}
+
+.otfw-plugin-required-notice .otfw-admin-notice-content {
+    float: left;
+    padding-left: 20px;
+}
+
+.otfw-plugin-required-notice .otfw-admin-notice-content h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #4636ff;
+}
+
+.otfw-plugin-required-notice .otfw-admin-notice-content p {
+    margin: 0;
+    margin-top: 5px;
+}

@@ -1,0 +1,121 @@
+/* Settings page */
+
+.joms-settings {
+    display: flex;
+    flex-direction: row;
+}
+
+.joms-settings .joms-fields {
+	flex: 65%;
+	margin-right: 5%;
+}
+
+.joms-settings .joms-recommendations {
+    flex: 30%;
+}
+
+@media (max-width: 800px) {
+    .joms-settings {
+        flex-direction: column;
+    }
+    .joms-settings .joms-fields,
+    .joms-settings .joms-recommendations {
+        flex: 100%;
+    }
+}
+
+
+/* Recomendation */
+
+.joms-settings .joms-recommendations img {
+    max-width: 100%;
+}
+
+.joms-settings .joms-recommendations h2 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.joms-settings .joms-recommendations h2:after {
+    content: "";
+    width: 40px;
+    height: 8px;
+    background: #2271b1;
+    display: block;
+    margin-top: 10px;
+}
+
+
+/* Toggle switch */
+
+.otfw_switch {
+    display: inline-flex;
+    margin: 0;
+}
+
+.otfw_switch input[type="checkbox"] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.otfw_switch input[type=checkbox]:checked+label {
+    background: #2271b1;
+}
+
+.otfw_switch input[type=checkbox]:checked+label::after {
+    left: calc(100% - 4px);
+    transform: translateX(-100%);
+}
+
+.otfw_switch label {
+    cursor: pointer;
+    width: 48px;
+    height: 24px;
+    background: grey;
+    display: block;
+    border-radius: 24px;
+    position: relative;
+}
+
+.otfw_switch label::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+/* icon Picker */
+.jomps-icons .jomps-icons-selector {
+	width: 250px;
+	height: 80px;
+	background: #ffffff;
+	padding: 5px 5px;
+	box-shadow: 0px 0px 1px 1px #ddd;
+	overflow-y: auto;
+	scrollbar-width: thin;
+	resize: both;
+}
+
+.jomps-icons .jomps-icons-selector li {
+	display: inline-block;
+	width: 55px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 30px;
+	border: 1px solid transparent;
+}
+
+.jomps-icons .jomps-icons-selector li:hover,
+.jomps-icons .jomps-icons-selector li.active {
+	color: #2271b1;
+	cursor: pointer;
+	border: 1px solid #c3d7e8;
+}

@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
+
+/* * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+} */
+
+
+/* body {
+  background-color: #f4f4f6;
+  font-family: "Mulish", sans-serif;
+  margin: 5px;
+} */
+
+.hide {
+    display: none;
+}
+
+.otfw_timeline {
+	display: flex;
+	padding: 40px 30px 60PX;
+	background-color: #f5f5f5;
+	flex-direction: column;
+	border-radius: 5px;
+}
+
+.timeline__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    padding: 34px 70px;
+    position: relative;
+    background: #fff;
+    box-shadow: 0px 2px 1px 0px #11111130;
+}
+
+.timeline__header::after {
+    content: "";
+    width: 100%;
+    height: 70px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: 2;
+    background-color: #eaeaea;
+}
+
+.timeline__header span {
+    margin-bottom: 5px;
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.timeline__header h1 {
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: #262245;
+    text-align: center;
+}
+
+.line .content h1::before {
+	margin: 8px 0px;
+}
+
+.timeline__header .process {
+    height: 8px;
+    background-color: #fff;
+    border-radius: 3px;
+    z-index: 4;
+}
+
+.timeline__header .process .xd {
+    width: 50%;
+    border-radius: 3px;
+    height: 8px;
+    background-color: #4d4d4d;
+}
+
+.line {
+	padding: 15px 40px;
+	position: relative;
+}
+
+.line::before {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 40px;
+    background-color: #4d4d4d;
+    content: "";
+}
+
+.line .content {
+    position: relative;
+    padding-left: 30px;
+}
+
+.line .content+.content {
+    margin-top: 40px;
+}
+
+.line .content h4 {
+	font-size: 12px;
+	color: #868686;
+	margin-bottom: 5px;
+	margin-top: 0px;
+}
+
+.line .content h1 {
+	font-size: 18px;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.line .content p {
+	font-size: 16px;
+	margin: 10px 0;
+}
+
+.otfw_timeline .line .content > div {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	left: -11px;
+	border-radius: 50%;
+}
+
+.otfw_timeline .line .content div > span {
+	font-size: 14px;
+	text-align: center;
+	display: block;
+	overflow: hidden;
+	line-height: 24px;
+}
+
+.otfw_timeline .line .content::before {
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center center;
+}
+
+/*# sourceMappingURL=main.css.map */
